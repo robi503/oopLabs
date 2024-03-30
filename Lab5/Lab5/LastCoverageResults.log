@@ -1,0 +1,21 @@
+[2024-03-29 09:18:09] [info] Start Program:
+Path:"D:\Facultate\OOP\Labs\Lab5Review\Lab5\x64\Debug\Lab5.exe"
+Arguments:
+Working directory: "D:\Facultate\OOP\Labs\Lab5Review\Lab5\"
+Modules: Selected: D:\Facultate\OOP\Labs\Lab5Review\Lab5\x64\Debug\Lab5.exe Excluded: 
+Sources: Selected: D:\Facultate\OOP\Exemple\Lab5Git\OOP-memorie-dinamica D:\Facultate\OOP\Labs\Lab5Review\Lab5 Excluded: 
+Log Level: Normal
+Cover Children: 0
+Aggregate by file: 1
+Continue after C++ exception: 0
+Optimized build support: 0
+Export: Binary C:\Users\robib\AppData\Local\Temp\yutr0b1l.j1j 
+Input coverage: 
+Unified diff: 
+Excluded line regular expressions: 
+Substitute pdb source paths: 
+
+[2024-03-29 09:18:09] [info] Module: D:\Facultate\OOP\Labs\Lab5Review\Lab5\x64\Debug\Lab5.exe is selected because it matches selected pattern: D:\Facultate\OOP\Labs\Lab5Review\Lab5\x64\Debug\Lab5.exe
+[2024-03-29 09:18:09] [info] ----------------------------------------------------
+[2024-03-29 09:18:09] [info] Coverage binary generated in file: C:\Users\robib\AppData\Local\Temp\yutr0b1l.j1j
+[2024-03-29 09:18:09] [info] ----------------------------------------------------

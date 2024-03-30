@@ -1,0 +1,132 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Facultate\\OOP\\Labs\\Lab5Review\\Lab5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\ui\\ui.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\myList.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\controllers\\controllers.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\repos.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\tests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87794A34-173B-4463-A4AE-DC36B3D0C13C}|Lab5.vcxproj|D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\controllerTests.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ui.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\ui\\ui.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\ui\\ui.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\ui\\ui.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\ui\\ui.c",
+              "ViewState": "AQIAABEBAAAAAAAAAAASwCEBAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-29T06:31:08.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "myList.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\myList.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\myList.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\myList.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\myList.c",
+              "ViewState": "AQIAADAAAAAAAAAAAAAhwD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T12:02:51.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "repos.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\repos.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\repos.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\repos.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\repos\\repos.c",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T11:33:17.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\main.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\main.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\main.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\main.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T11:26:54.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "tests.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\tests.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\tests.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\tests.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\tests.c",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T11:11:14.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "controllerTests.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\controllerTests.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\controllerTests.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\controllerTests.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\tests\\controllerTests.c",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAFgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-28T11:25:36.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "controllers.c",
+              "DocumentMoniker": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\controllers\\controllers.c",
+              "RelativeDocumentMoniker": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\controllers\\controllers.c",
+              "ToolTip": "D:\\Facultate\\OOP\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\controllers\\controllers.c",
+              "RelativeToolTip": "..\\..\\..\\Exemple\\Lab5Git\\OOP-memorie-dinamica\\controllers\\controllers.c",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEAAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-03-27T20:36:15.616Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
