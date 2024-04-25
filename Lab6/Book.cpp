@@ -52,7 +52,6 @@ bool Book::operator==(const Book& other) const
     return title == other.title && author == other.author && genre == other.genre && year == other.year;
 }
 
-// String representation method
 std::string Book::toString() const {
     std::string info = "Title: " + title + "; ";
     info += "Author: " + author + "; ";

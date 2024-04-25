@@ -6,7 +6,7 @@
 
 // Test the addBook method of the BookService class
 void testAddService() {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     assert(service.getAllBooks().size() == 1);
     bool ok = false;
@@ -21,7 +21,7 @@ void testAddService() {
 
 // Test the deleteBook method of the BookService class
 void testDeleteService() {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.deleteBook(0);
     assert(service.getAllBooks().size() == 0);
@@ -37,7 +37,7 @@ void testDeleteService() {
 
 // Test the modifyBook method of the BookService class
 void testModifyService() {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.modifyBook(0, "NewTitle", "NewAuthor", "NewGenre", 2023);
     assert(service.getAllBooks()[0].getTitle() == "NewTitle");
@@ -62,7 +62,7 @@ void testModifyService() {
 
 // Test the getAllBooks method of the BookService class
 void testGetAllService() {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.addBook("Title2", "Author2", "Genre2", 2023);
     assert(service.getAllBooks().size() == 2);
@@ -70,7 +70,7 @@ void testGetAllService() {
 
 // Test the getBookByTitle method of the BookService class
 void testGetBookByTitleService() {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.addBook("Title2", "Author2", "Genre2", 2023);
 
@@ -91,7 +91,7 @@ void testGetBookByTitleService() {
 
 void testFilter()
 {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.addBook("Title2", "Author2", "Genre2", 2023);
     service.addBook("Title3", "Author3", "Genre1", 2023);
@@ -109,7 +109,7 @@ void testFilter()
 
 void testSort()
 {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.addBook("Title2", "Author2", "Genre2", 2023);
     service.addBook("Title3", "Author3", "Genre1", 2023);
@@ -135,7 +135,7 @@ void testSort()
 
 void testAddCart()
 {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     assert(service.addBookToCart("Title1") == 1);
     bool exceptionThrown = false;
@@ -150,7 +150,7 @@ void testAddCart()
 
 void testEmptyCart()
 {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     assert(service.addBookToCart("Title1") == 1);
     assert(service.emptyCart() == 0);
@@ -158,7 +158,7 @@ void testEmptyCart()
 
 void testExportCart()
 {
-    BookService service;
+    BookService service(new Repo);
 
     // Add some books to the cart
     service.addBook("Book 1", "Author 1", "Genre 1", 2000);
@@ -213,11 +213,46 @@ void testExportCart()
 
 void testGenerateCart()
 {
-    BookService service;
+    BookService service(new Repo);
     service.addBook("Title1", "Author1", "Genre1", 2022);
     service.addBook("Title2", "Author2", "Genre2", 2023);
     service.addBook("Title3", "Author3", "Genre1", 2023);
     assert(service.generateCart(3) == 3);
+}
+
+void testUndoAdd()
+{
+    BookService service(new Repo);
+    service.addBook("Title1", "Author1", "Genre1", 2022);
+    service.undo();
+    assert(service.getAllBooks().size() == 0);
+    bool ok = false;
+    try {
+        service.undo();
+    }
+    catch (std::out_of_range) {
+        ok = true;
+    }
+    assert(ok);
+}
+
+void testUndoDelete()
+{
+    BookService service(new Repo);
+    service.addBook("Title1", "Author1", "Genre1", 2022);
+    service.deleteBook(0);
+    service.undo();
+    assert(service.getAllBooks().size() == 1);
+    assert(service.getAllBooks()[0] == Book("Title1", "Author1", "Genre1", 2022));
+}
+
+void testUndoModify()
+{
+    BookService service(new Repo);
+    service.addBook("Title1", "Author1", "Genre1", 2022);
+    service.modifyBook(0, "NewTitle", "NewAuthor", "NewGenre", 2023);
+    service.undo();
+    assert(service.getAllBooks()[0] == Book("Title1", "Author1", "Genre1", 2022));
 }
 
 
@@ -233,5 +268,8 @@ void testAllService() {
     testEmptyCart();
     testExportCart();
     testGenerateCart();
+    testUndoAdd();
+    testUndoDelete();
+    testUndoModify();
     testSort();
 }

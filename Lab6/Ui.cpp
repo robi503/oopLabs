@@ -11,11 +11,14 @@ void Ui::printMenu() const {
     std::cout << "7. Sort books\n";
     std::cout << "8. Add to cart\n";
     std::cout << "9. Generate cart\n";
+    std::cout << "u. Undo\n";
     std::cout << "e. Empty cart\n";
     std::cout << "x. Export cart\n";
     std::cout << "a. Add dummy\n";
     std::cout << "q. Quit\n";
 }
+
+Ui::Ui() : service {new FileRepo("books.txt")}{ }
 
 void Ui::handleAdd() {
     std::string title, author, genre;
@@ -114,7 +117,7 @@ void Ui::handleDelete()
 
 void Ui::printAllBooks() const {
     std::cout << "All books:\n";
-    for (int i = 0; i < service.getAllBooks().size(); i++) {
+    for (size_t i = 0; i < service.getAllBooks().size(); i++) {
         std::cout << "[" << i << "]" << service.getAllBooks()[i].toString();
     }
 }
@@ -256,6 +259,16 @@ void Ui::addDummy() {
     service.addBook("The Catcher in the Rye", "J.D. Salinger", "Fiction", 1951);
 }
 
+void Ui::handleUndo()
+{
+    try {
+        service.undo();
+        std::cout << "Undo successful\n";
+    }
+    catch (const std::exception &e){
+        std::cout << e.what() << std::endl;
+    }
+}
 
 void Ui::run() {
     while (running) {
@@ -291,6 +304,9 @@ void Ui::run() {
             break;
         case '9':
             handleGenerateCart();
+            break;
+        case 'u':
+            handleUndo();
             break;
         case 'e':
             handleEmptyCart();

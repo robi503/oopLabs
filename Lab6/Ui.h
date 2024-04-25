@@ -8,6 +8,7 @@ private:
 	bool running = true;
 
 public:
+	Ui();
 	void printMenu() const;
 	void handleAdd();
 	void handleModify();
@@ -21,6 +22,7 @@ public:
 	void handleFilter() const;
 	void handleSort() const;
 	void addDummy();
+	void handleUndo();
 	void run();
 };
 

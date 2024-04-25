@@ -10,7 +10,7 @@ void BookCart::emptyCart()
 	books.clear();
 }
 
-int BookCart::getNumberOfBooks() const
+size_t BookCart::getNumberOfBooks() const
 {
 	return books.size();
 }

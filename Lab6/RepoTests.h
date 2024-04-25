@@ -8,4 +8,12 @@ void testGetAll();
 
 void testGetOne();
 
+void testAddFile();
+
+void testDeleteFile();
+
+void testModifyFile();
+
+void testLoadFromFile();
+
 void testAllRepo();

@@ -1,28 +1,32 @@
-#include "Repo.h"
+#include "FileRepo.h"
 #include "BookCart.h"
+#include "UndoAction.h"
 
 class BookService
 {
 private:
-    Repo repo;
+    Repo* repo;
     BookCart bookCart;
+    std::vector<UndoAction*> undoList;
 
 public:
+    BookService(Repo* repoPtr);
+
     // Creates a book and adds it to the repository
     // @throws throws runtime_error if the book already exists in the repository
     void addBook(const std::string& title, const std::string& author, const std::string& genre, int year);
 
     // Adds a book to the cart by title
     // @returns number of elements in the cart
-    int addBookToCart(const std::string& title);
+    size_t addBookToCart(const std::string& title);
 
     // Empties the cart
     // @returns number of elements in the cart
-    int emptyCart();
+    size_t emptyCart();
 
     // Add n random books from the repo
     // @returns number of elements in the cart
-    int generateCart(int n);
+    size_t generateCart(int n);
 
     // Exports the contents of the cart to a file in a csv format
     void exportCart(const std::string& fileName);
@@ -59,4 +63,9 @@ public:
 
     // Compares two books by year and genre
     static bool compareBooksByYearAndGenre(const Book& book1, const Book& book2);
+
+    // Undoes the last action (add, modify or delete)
+    void undo();
+
+    ~BookService();
 };

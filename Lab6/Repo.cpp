@@ -4,18 +4,22 @@ void Repo::add(const Book& elem) {
     elems.push_back(elem);
 }
 
-void Repo::modify(int pos, const Book& newElem) {
+const Book Repo::modify(int pos, const Book& newElem) {
     if (pos < 0 || pos >= elems.size()) {
         throw std::out_of_range("Invalid position");
     }
+    Book originalBook = elems[pos];
     elems[pos] = newElem;
+    return originalBook;
 }
 
-void Repo::remove(int pos) {
+const Book Repo::remove(int pos) {
     if (pos < 0 || pos >= elems.size()) {
         throw std::out_of_range("Invalid position");
     }
+    Book removedBook = elems[pos];
     elems.erase(elems.begin() + pos);
+    return removedBook;
 }
 
 
@@ -29,3 +33,5 @@ const Book& Repo::getOne(int pos) const{
     }
     return elems[pos];
 }
+
+Repo::~Repo() {}

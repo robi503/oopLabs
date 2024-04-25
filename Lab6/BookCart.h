@@ -16,7 +16,7 @@ public:
 	void emptyCart();
 
 	//Returns the number of books in the cart
-	int getNumberOfBooks() const;
+	size_t getNumberOfBooks() const;
 
 	//Exports books from cart in a csv format
 	void exportCart(const std::string& fileName) const;

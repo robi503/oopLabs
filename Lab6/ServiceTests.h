@@ -20,4 +20,10 @@ void testExportCart();
 
 void testGenerateCart();
 
+void testUndoAdd();
+
+void testUndoDelete();
+
+void testUndoModify();
+
 void testAllService();
